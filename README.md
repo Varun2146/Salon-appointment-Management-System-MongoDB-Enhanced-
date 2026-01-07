@@ -50,17 +50,21 @@ A full-stack **Men’s Salon Appointment Booking Web Application** that allows c
 
 
 ---
+⚙️ Installation & Setup
 
-## ⚙️ Installation & Setup
 
-
+1️⃣ Navigate to Project Folder
 cd mens-salon-app
+
 2️⃣ Install Dependencies
 npm install
+
 3️⃣ Create .env File
-env
+
+Create a .env file in the root directory and add the following:
 
 MONGO_URI=mongodb://127.0.0.1:27017
+
 EMAILUSER=your_email@gmail.com
 EMAILPASS=your_app_password
 
@@ -69,36 +73,53 @@ ADMINS=[
   {"user":"arjun","pass":"arjun"},
   {"user":"vijay","pass":"vijay"}
 ]
-⚠️ Use Gmail App Password, not your main Gmail password.
+
+
+⚠️ Important:
+Use a Gmail App Password, not your main Gmail password.
 
 4️⃣ Start MongoDB
-mongodb started successfully
+mongod
+
+
+✅ MongoDB should show “MongoDB started successfully”
+
 5️⃣ Run the Server
 node server.js
-Server will run on:
+
+
+🚀 Server will run on:
+
 http://localhost:8000
+
 🔑 Admin Login Details (Demo)
 Username	Password
 varun	varun
 arjun	arjun
 vijay	vijay
 
-Admin Panel:
-http://localhost:8000/admin.html
-🔁 Application Flow
-User selects services → date → time
+🔗 Admin Panel URL:
 
-Appointment saved in MongoDB
+http://localhost:8000/admin.html
+
+🔁 Application Flow
+
+User selects services
+
+User chooses date and time
+
+Appointment is saved in MongoDB
 
 Status defaults to Pending
 
-Admin confirms/rejects booking
+Admin confirms or rejects booking
 
 Customer receives email notification
 
 Admin dashboard updates in real time
 
 📧 Email Notifications
+
 Emails are automatically sent when:
 
 Appointment is booked
@@ -107,10 +128,10 @@ Appointment is confirmed
 
 Appointment is rejected
 
-Powered by Nodemailer + Gmail SMTP.
-
+📨 Powered by Nodemailer + Gmail SMTP
 
 🚀 Future Enhancements
+
 Payment gateway integration
 
 Slot availability management
@@ -122,12 +143,14 @@ Admin analytics dashboard
 Role-based authentication
 
 👨‍💻 Author
+
 Varun J
 Full Stack Developer | Web Enthusiast
 
 📌 Built as a real-world full-stack project to demonstrate end-to-end development skills.
 
 ⭐ Support
+
 If you like this project:
 
 Give it a ⭐ on GitHub
@@ -137,4 +160,3 @@ Fork it 🍴
 Improve it 🚀
 
 Happy Coding! 💻✨
-
